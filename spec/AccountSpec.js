@@ -1,3 +1,5 @@
+'use strict'
+
 describe('Account', function() {
   var account;
 
@@ -6,7 +8,7 @@ describe('Account', function() {
   });
 
   it('should have an initial balance of zero', function() {
-    expect(account.balance).toEqual(0);
+    expect(account.getCurrentBalance()).toEqual(0);
   });
 
 });
