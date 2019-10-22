@@ -10,6 +10,6 @@ Account.prototype.getCurrentBalance = function() {
   return this.balance;
 };
 
-Account.prototype.getDateOpened = function() {
+Account.prototype.getAccountOpeningDate = function() {
   return this.dateOpened;
 };

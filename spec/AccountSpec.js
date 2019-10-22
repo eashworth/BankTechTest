@@ -13,10 +13,11 @@ describe('Account', function() {
     expect(account.getCurrentBalance()).toEqual(0);
   });
 
-  describe('getDateOpened', function() {
+  describe('getAccountOpeningDate', function() {
     it('should return the date the account was opened', function() {
-      expect(account.getDateOpened()).toEqual(date)
+      expect(account.getAccountOpeningDate()).toEqual(date)
     });
   });
+
 
 });
