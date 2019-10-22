@@ -9,9 +9,15 @@ describe('DateHandler', function() {
     date = new Date();
   });
 
-  describe('returnDateAsString', function() {
-    it("given a date object, it returns it as a string", function() {
-      expect(typeof dateHandler.returnDateAsString(date) === "string").toEqual(true);
+  describe('getCurrentDate', function() {
+    it('returns the current date', function() {
+      expect(dateHandler.getCurrentDate() instanceof Date).toEqual(true);
+    });
+  });
+
+  describe('formatDate', function() {
+    it('given a date, it returns it as a string in the format DD/MM/YYYY', function() {
+      expect(dateHandler.formatDate(date)).toEqual(date.toLocaleDateString('en-GB'))
     });
   });
 

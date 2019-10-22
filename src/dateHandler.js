@@ -3,6 +3,11 @@
 function DateHandler() {
 };
 
-DateHandler.prototype.returnDateAsString = function(date) {
-  return String(date);
+DateHandler.prototype.getCurrentDate = function() {
+  var currentDate = new Date;
+  return currentDate;
+};
+
+DateHandler.prototype.formatDate = function(date) {
+  return date.toLocaleDateString('en-GB');
 };
